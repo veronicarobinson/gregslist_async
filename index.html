@@ -33,7 +33,74 @@
     </section>
 
     <!-- TODO houses go here! -->
+    <section id="houses-section" class="container-fluid ">
+      <div class="row my-3">
+        <div class="col-md-6">
+          <!-- <div id="house-form-placeholder">
+            <img src="https://i.pinimg.com/564x/34/fb/d0/34fbd0c598fc677f3e27777e1c52c0d9.jpg" alt="" srcset="">
+            <h3>You should probs log in.</h3>
+          </div> -->
+          <form onsubmit="app.housesController.submitHouse()" id="house-form" class="sticky-top ">
+            <!-- STUB Bedrooms -->
+            <div>
+              <label for="house-bedrooms">Bedrooms</label>
+              <input type="number" min="1" max="100" required name="bedrooms" class="w-100">
+            </div>
+            <!-- STUB Bathrooms -->
+            <div>
+              <label for="house-bathrooms">Bathrooms</label>
+              <input type="number" min="1" max="100" required name="bathrooms" class="w-100">
+            </div>
+            <!-- STUB Levels -->
+            <div>
+              <label for="house-levels">Stories/Levels</label>
+              <input type="number" min="1" max="100" required name="levels" class="w-100">
+            </div>
+            <!-- STUB Year -->
+            <div>
+              <label for="house-year">Built in Year</label>
+              <input type="number" min="1700" max="10000" required name="bathrooms" class="w-100">
+            </div>
+            <!-- STUB HOUSE IMAGE -->
+            <div>
+              <label for="house-img">House Image URL</label>
+              <input id="house-img" type="url" maxlength="500" required name="img" class="w-100">
+            </div>
+            <!-- STUB  Description -->
+            <div>
+              <label for="house-description">House Description</label>
+              <textarea name="description" id="house-description" maxlength="500" class="w-100"></textarea>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
 
+          </form>
+        </div>
+      </div>
+
+      <div id="house-listing" class="row">
+        <!-- <div class="col-md-6 mb-3">
+          <div class="shadow">
+            <img class="card-img" src="https://robertkaplinsky.com/wp-content/uploads/2014/08/zoolander_center2.jpg"
+              alt="" srcset="">
+            <div>
+              <div>
+                <span>Year:</span>
+                <span>House Stories:</span>
+                <span>Bedrooms:</span>
+                <span>Bathrooms:</span>
+              </div>
+              <p>Formerly known as: Derek Zoolanders Center For Kids Who Can't Read Good and Who Wanna Learn To Do Stuff
+                Good Too</p>
+            </div>
+            <div class="text-success">$3000</div>
+          </div>
+
+        </div> -->
+      </div>
+
+    </section>
+    <!-- NOTE cars section ---------------------------------------------------------->
     <section id="cars-section" class="container-fluid d-none">
       <div class="row my-3">
         <div class="col-md-6">
